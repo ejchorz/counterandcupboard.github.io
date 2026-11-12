@@ -8,6 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Zilla+Slab:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="canonical" href="https://counterandcupboard.com/">
 <!-- Google Search Console: paste the google-site-verification meta tag on the next line. Do not invent a token. -->
 <!-- Analytics: paste the analytics snippet here (for example gtag.js or Plausible). Do not invent a measurement ID. -->
@@ -117,6 +121,21 @@ a.cta:hover,a.cta:focus-visible{background:var(--brass);border-color:var(--brass
 .pick ul.kit li{margin:0 0 16px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
 .pick ul.kit li:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
 .fineprint{margin:18px 0 0;font-size:15px;color:#4a4b41}
+
+.card-icon{display:flex;width:36px;height:36px;align-items:center;justify-content:center;border:1px solid var(--rule);border-radius:50%;background:var(--porcelain)}
+.card-icon svg{display:block}
+.holiday{padding:8px 0 6px}
+.holiday h2{font-size:clamp(28px,4vw,36px);font-weight:600}
+.holiday-lede{margin-top:8px;max-width:54ch;color:#3c3d34}
+.holiday-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.holiday-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--rule);border-radius:6px;overflow:hidden;text-decoration:none;color:inherit;height:100%}
+.holiday-card:hover{border-color:var(--brass)}
+.holiday-card:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.holiday-card img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block;background:#e8e2d4}
+.holiday-card .pad{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.holiday-card .holiday-title{font-family:'Zilla Slab',serif;font-size:21px;line-height:1.25;font-weight:600;color:var(--ink)}
+.holiday-card p{font-size:15px;line-height:1.5;color:#4a4b41;margin:0}
+@media (max-width:760px){.holiday-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -138,48 +157,75 @@ a.cta:hover,a.cta:focus-visible{background:var(--brass);border-color:var(--brass
 <g><path d="M790 24l44 8-6 10-44-8 6-10Z"/><path d="M828 42l-8 34h-8l6-36"/></g>
 </svg></div>
 </div></section>
+<section class="holiday" aria-labelledby="holiday-heading"><div class="wrap">
+<h2 id="holiday-heading">Holiday Gift Guides</h2>
+<p class="holiday-lede">Three short lists for people who already cook. Prices move, so check before you buy.</p>
+<div class="holiday-grid">
+<a class="holiday-card" href="kitchen-stocking-stuffers-under-25.html">
+<picture>
+<source srcset="images/stocking-stuffers-thumb.webp" type="image/webp">
+<img src="images/stocking-stuffers-thumb.jpg" width="720" height="588" alt="Kitchen towels, a wooden spoon, and a small kettle arranged on a wood counter." loading="lazy">
+</picture>
+<div class="pad"><span class="eyebrow">Under $25</span><span class="holiday-title">Kitchen Stocking Stuffers</span><p>Small tools that fit in a stocking: a peeler, shears, a thermometer, a kettle.</p></div>
+</a>
+<a class="holiday-card" href="gifts-for-coffee-lovers-under-50.html">
+<picture>
+<source srcset="images/coffee-gifts-thumb.webp" type="image/webp">
+<img src="images/coffee-gifts-thumb.jpg" width="720" height="558" alt="Pour-over dripper, hand grinder, coffee cup, and beans on a wood counter." loading="lazy">
+</picture>
+<div class="pad"><span class="eyebrow">Under $50</span><span class="holiday-title">Gifts for Coffee Lovers</span><p>A brewer, a hand grinder, a pour-over set, and a way to boil water.</p></div>
+</a>
+<a class="holiday-card" href="cast-iron-gifts.html">
+<picture>
+<source srcset="images/cast-iron-gifts-thumb.webp" type="image/webp">
+<img src="images/cast-iron-gifts-thumb.jpg" width="720" height="585" alt="Cast iron skillet with a red scraper, oil bottle, and chainmail scrubber." loading="lazy">
+</picture>
+<div class="pad"><span class="eyebrow">For a new pan</span><span class="holiday-title">Cast Iron Gifts</span><p>Scrapers, a scrubber, a handle sleeve, oil, a lid, and a trivet.</p></div>
+</a>
+</div>
+</div></section>
 <section class="wrap"><div class="grid">
-<div class="card"><span class="eyebrow">Gifts</span>
+<div class="card"><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#41502F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="10" width="17" height="9.5" rx="1.2"/><path d="M12 10v9.5M3.5 14.2h17"/><path d="M12 10c-1.1-2.4-4-3-5-1.5S10.4 10 12 10s3.6.1 4.4-1.5S13.1 7.6 12 10z"/></svg></span><span class="eyebrow">Gifts</span>
 <h3><a href="kitchen-stocking-stuffers-under-25.html">Kitchen Stocking Stuffers Under $25</a></h3>
 <p>Small tools for a home cook: a peeler, shears, a thermometer, a kettle, and a few organizers that actually fit in a stocking. Prices move, so check before you buy.</p>
 <a class="more" href="kitchen-stocking-stuffers-under-25.html">Read the guide &rarr;</a></div>
-<div class="card"><span class="eyebrow">Gifts</span>
+<div class="card"><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#41502F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h8.2v7.2A3.2 3.2 0 0 1 11 18.4H9.2A3.2 3.2 0 0 1 6 15.2V8z"/><path d="M14.2 10.2h1.7a2.1 2.1 0 0 1 0 4.2h-1.7"/></svg></span><span class="eyebrow">Gifts</span>
 <h3><a href="gifts-for-coffee-lovers-under-50.html">Gifts for Coffee Lovers Under $50</a></h3>
 <p>A brewer, a hand grinder, a pour-over set, a scale, and a kettle — sized for a coffee gift, not a counter-hogging machine. Prices move, so check before you buy.</p>
 <a class="more" href="gifts-for-coffee-lovers-under-50.html">Read the guide &rarr;</a></div>
-<div class="card"><span class="eyebrow">Gifts</span>
+<div class="card"><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#41502F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="10" r="5.2"/><path d="M11 15.2v4.3"/></svg></span><span class="eyebrow">Gifts</span>
 <h3><a href="cast-iron-gifts.html">Gifts for Someone Who Just Got a Cast Iron Pan</a></h3>
 <p>Scrapers, a chainmail scrubber, seasoning oil, a handle sleeve, a lid, and a trivet. The pan is already theirs. These are the pieces that keep it in use.</p>
 <a class="more" href="cast-iron-gifts.html">Read the guide &rarr;</a></div>
-<div class="card"><span class="eyebrow">Cookware</span>
+<div class="card"><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#41502F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="9" cy="14" rx="5.4" ry="3.1"/><path d="M14.4 13.2H20"/></svg></span><span class="eyebrow">Cookware</span>
 <h3><a href="cast-iron-vs-nonstick.html">Cast Iron vs. Nonstick: Which Skillet Should You Buy First?</a></h3>
 <p>If you only own one skillet, it should earn its spot. Here's how the two classics actually compare on a weeknight.</p>
 <a class="more" href="cast-iron-vs-nonstick.html">Read the guide &rarr;</a></div>
-<div class="card"><span class="eyebrow">Knives</span>
+<div class="card"><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#41502F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 4.5 7 16.2"/><path d="M15.5 4.5c.9.7.2 2.2-1.2 3.6L7 16.2"/><path d="M4.5 19h7"/></svg></span><span class="eyebrow">Knives</span>
 <h3><a href="choosing-a-chefs-knife.html">How to Choose a Chef's Knife (Without Spending $200)</a></h3>
 <p>The knife matters less than knife people say — and more than beginners think. What to look for, and where the money actually goes.</p>
 <a class="more" href="choosing-a-chefs-knife.html">Read the guide &rarr;</a></div>
-<div class="card"><span class="eyebrow">Coffee</span>
+<div class="card"><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#41502F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 11h7.2v5.2a3 3 0 0 1-3 3H11a3 3 0 0 1-3-3V11z"/><path d="M15.2 12.2c1.6-.6 3.4-.2 4 1.2"/><path d="M10.2 11V8.2h3.2"/></svg></span><span class="eyebrow">Coffee</span>
 <h3><a href="small-kitchen-coffee-setup.html">The Small-Kitchen Coffee Setup: Great Coffee in Four Square Feet</a></h3>
 <p>You don't need an espresso machine the size of a microwave. You need a grinder, one good brewer, and a kettle you like.</p>
 <a class="more" href="small-kitchen-coffee-setup.html">Read the guide &rarr;</a></div>
-<div class="card"><span class="eyebrow">Baking</span>
+<div class="card"><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#41502F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19.2h14"/><path d="M8 19.2V9.2h5.2l2.8 4.6v5.4"/><circle cx="10.4" cy="7" r="1.8"/></svg></span><span class="eyebrow">Baking</span>
 <h3><a href="stand-mixer-or-hand-mixer.html">Stand Mixer or Hand Mixer? An Honest Guide for Home Bakers</a></h3>
 <p>The stand mixer is a wonderful machine that many kitchens don't need. Here's how to tell which kitchen is yours.</p>
 <a class="more" href="stand-mixer-or-hand-mixer.html">Read the guide &rarr;</a></div>
-<div class="card"><span class="eyebrow">Storage</span>
+<div class="card"><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#41502F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6.5h8V9H8z"/><rect x="6.8" y="9" width="10.4" height="9" rx="1"/></svg></span><span class="eyebrow">Storage</span>
 <h3><a href="glass-vs-plastic-food-storage.html">Glass vs. Plastic Food Storage: What to Actually Buy</a></h3>
 <p>The container drawer is where good intentions go to warp and stain. Here's the setup that ends the chaos.</p>
 <a class="more" href="glass-vs-plastic-food-storage.html">Read the guide &rarr;</a></div>
-<div class="card"><span class="eyebrow">Organization</span>
+<div class="card"><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#41502F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16M6.2 7v10M17.8 7v10"/></svg></span><span class="eyebrow">Organization</span>
 <h3><a href="pantry-organization-that-lasts.html">Pantry Organization That Survives Real Life</a></h3>
 <p>Anyone can make a pantry beautiful for a photo. The trick is a system that still works after three chaotic weeknights.</p>
 <a class="more" href="pantry-organization-that-lasts.html">Read the guide &rarr;</a></div>
-<div class="card"><span class="eyebrow">Organization</span>
+<div class="card"><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#41502F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2a1.7 1.7 0 1 1 1.7 1.7c-.9 0-1.7.5-1.7 1.7"/><path d="M12 9.6 5.8 15.2h12.4L12 9.6z"/></svg></span><span class="eyebrow">Organization</span>
 <h3><a href="closet-organization-renters-budget.html">Closet Organization on a Renter's Budget</a></h3>
 <p>No drilling, no custom systems, no landlord conversations. How to roughly double a closet with what is typically about $100 of removable gear.</p>
 <a class="more" href="closet-organization-renters-budget.html">Read the guide &rarr;</a></div>
-<div class="card"><span class="eyebrow">Organization</span>
+<div class="card"><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#41502F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="1.2"/><path d="M4 9.3h16M4 14.6h16M10.6 12h2.8"/></svg></span><span class="eyebrow">Organization</span>
 <h3><a href="taming-the-junk-drawer.html">Taming the Junk Drawer (and Every Drawer After It)</a></h3>
 <p>You don't eliminate the junk drawer. You give it borders. A method for the messiest drawer in the house — and all the rest.</p>
 <a class="more" href="taming-the-junk-drawer.html">Read the guide &rarr;</a></div>
